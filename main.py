@@ -41,7 +41,12 @@ speak("Hello, I am Jarvis. How can I help you today?")
 while input != 'exit':
     input = takeCommand()
     print(f'User: {input}')
-    print('Processing')
+    print('Processing...')
     response = generate_response(input)
+    modified_responce = ''
+    for chr in response:
+        if chr != '*':
+            modified_responce += chr
+    response = modified_responce
     print(f'Jarvis: {response}')
     speak(response)
