@@ -36,3 +36,28 @@ Jarvis is a smart voice assistant built with Python. It listens to your voice, u
 ```bash
 git clone https://github.com/sarangkrish27/Jarvis-with-GeminiAi.git
 cd Jarvis-with-GeminiAi
+```
+
+2. **Set up your Google Gemini API key:**
+   - Visit Google AI Studio and get your API key.
+   - Open `main.py` and replace this line:
+
+```python
+client = genai.Client(api_key="Your API Key")
+```
+with:
+
+```python
+client = genai.Client(api_key="your_actual_api_key")
+```
+
+## ▶️ Running the Assistant
+
+Simply run:
+
+```bash
+python main.py
+```
+Speak your question or command — Jarvis will listen, process it, and reply with a voice response.
+
+## Made with ❤️ by Sarang
